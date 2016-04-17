@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>请拿走你的序列号</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css"/>
+		<script language="javascript">
+			function copyText(){
+				var clipBoardContent="";
+				clipBoardContent+=document.getElementById("cdk").innerHTML;
+				clipBoardContent+="";
+				window.clipboardData.setData("Text",clipBoardContent);
+				alert("复制成功");
+			}
+			//copyToClipBoard();
+			
+		</script>
+	</head>
+<body>
+	<div class="allP">
+		<include file="./Application/Home/View/Public/header.html" />
+
+		<div class="content">
+			<div class="prompt"><span>温馨提示：</span>你已成功领取到号码，请及时激活使用</div>
+
+			<div class="seqcode">请拿走你的序列号：
+			
+				<span id="cdk">{$accode}</span>
+				<!--	
+				<input value="复 制" style="line-height:24px;font-size:14px" onclick="copyText('cdk')" type="button" id="copycode">
+				-->
+			</div>
+			
+			<div class="intro">
+				<h1>使用说明</h1>
+
+				<h4>序列号激活条件:</h4>
+				<ul class="intro_condi">
+					<li>①使用从未进入过《天谕》的网易通行证才能成功激活，每个序列号只能被激活一次；</li>
+					<li>②使用在《天谕》创建的首个角色激活，激活时等级≤15级，在线时间≤30分钟；</li>
+					<li>③确保新手序列号为玩家首个激活的礼包，此前若激活过官网新手礼包则无法成功绑定。</li>
+				</ul>
+				<h4>激活步骤:</h4>
+				<ul class="intro_condi">
+					<li>①成功下载《天谕》客户端，并登陆游戏完成角色创建；</li>
+					<li>②在界面右上角找到“领奖中心”-“领奖码兑换”-输入新手序列号即可激活。</li>
+					<li><img src="__PUBLIC__/images/251.jpg" alt="第一步" /></li>
+					<li><img src="__PUBLIC__/images/252.jpg" alt="第一步" /></li>
+				</ul>
+				<h4>道具礼包</h4>
+				<ul class="intro_condi">
+					<li>九转回魂*2、天神酒*2</li>
+					<li>特别说明：玩家进入游戏后成功激活“新手序列号”后，可成功激活其它媒体礼包，不互斥！</li>
+				</ul>
+			
+			</div>
+		
+		</div>
+
+
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+
+</body>
+</html>

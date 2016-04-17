@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<link rel="stylesheet" href="__PUBLIC__/css/style.css" type="text/css" />
+		<title>输入验证码</title>
+		<style type="text/css">
+			.verify_form{
+				width:250px;
+				display:block;
+				margin:10px auto;
+
+			}
+			.verify_text{
+				margin-top:10px;
+				padding-left:10px;
+				width:180px;
+				height:35px;
+			}
+			.refresh{
+				width:45px;
+				height:35px;
+			}
+			.sub{
+				margin-top:10px;
+				height:35px;
+			}
+		</style>
+		<script type="text/javascript">
+			 function changeVerify(){
+				document.getElementById('verifyImg').src= '__APP__/Index/add_verify/' + Math.random();  
+			 }
+		</script>
+	</head>
+<body>
+	<div class="allP">
+		<include file="./Application/Home/View/Public/header.html" />
+		<div class="content">
+			<form action="{:U('Index/inspec')}?type={$type}" method="post" class="verify_form">
+                <img src="{:U('Index/add_verify')}" id="verifyImg" onClick="changeVerify()"/>
+                <input type="text" class="verify_text" name="verify" placeholder="验证码" />
+                <button type="button" class="refresh" onClick="changeVerify()">刷新</button>
+				<input class="sub" type="submit" name="提交" value="提交验证码"/>
+            </form>
+		</div>
+
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div> 
+</body>
+</html>

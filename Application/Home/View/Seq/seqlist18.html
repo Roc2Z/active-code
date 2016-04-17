@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>请拿走你的序列号</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css"/>
+		<script language="javascript">
+			function copyText(){
+				var clipBoardContent="";
+				clipBoardContent+=document.getElementById("cdk").innerHTML;
+				clipBoardContent+="";
+				window.clipboardData.setData("Text",clipBoardContent);
+				alert("复制成功");
+			}
+			//copyToClipBoard();
+			
+		</script>
+	</head>
+<body>
+	<div class="allP">
+		<include file="./Application/Home/View/Public/header.html" />
+
+		<div class="content">
+			<div class="prompt"><span>温馨提示：</span>你已成功领取到号码，请及时激活使用</div>
+
+			<div class="seqcode">请拿走你的序列号：
+			
+				<span id="cdk">{$accode}</span>
+				<!--	
+				<input value="复 制" style="line-height:24px;font-size:14px" onclick="copyText('cdk')" type="button" id="copycode">
+				-->
+			</div>
+			
+			<div class="intro">
+				<h1>使用说明</h1>
+
+				<h4>序列号激活条件:</h4>
+				<ul class="intro_condi">
+					<li>只要玩家网易通行证内从未在《武魂2》游戏内创建过角色，即可激活序列号。每个序列号只能使用一次，不符合条件的玩家不能激活，进入游戏后游戏系统给予不能激活提示。</li>
+					<li>　请进游戏后，1小时内激活序列号。</li>
+					
+				</ul>
+				<h4>激活方式一:</h4>
+				<ul class="intro_condi">
+					<li>1、打开客户端，进入游戏，输入账号密码，选择服务器；</li>
+					<li><img src="__PUBLIC__/images/181.jpg" alt="第一步" /></li>
+					<li>2、选择服务器后，再选择人物角色和门派，完成后点击“下一步”</li>
+					<li><img src="__PUBLIC__/images/182.jpg" alt="第一步" /></li>
+					<li>3、在角色创建界面，连续点击左上角“性别”空白处6次，在人物脚下方出现序列号输入窗口，输入序列号</li>
+					<li><img src="__PUBLIC__/images/183.jpg" alt="第一步" /></li>
+					<li>4、成功激活序列号后，输入昵称，并进入游戏，礼包奖励自动放到角色背包内（需要完成一个新手任务，自动达到5级，方可使用礼包）</li>
+				</ul>
+				<h4>激活方式二:</h4>
+				<ul class="intro_condi">
+					<li>进入游戏后，完成新手任务达到五级，在门派附近找到NPC“小精灵”，输入序列号并确认激活后，即可获得道具礼包。</li>
+					
+				</ul>
+				<h4>礼包奖励：</h4>
+				<ul class="intro_condi">
+					<li>5级 8格包袱</li>
+					<li>10级 中级骑术（30天体验版）；坐骑：霸天虎（30天体验版）</li>
+					<li>15级 随机名气帖x4；一品灵丹；复活药水x5</li>
+					<li>20级 小生命药箱；小回复药包；二品灵丹</li>
+					<li>30级 净魂珠；1.5倍经验药水；三品灵丹</li>
+					<li>40级 易容丸；四品灵丹x2；时装鉴赏邀请函x3；1.5倍经验药水</li>
+					<li>50级 返本檀香散；五品灵丹x2；时装鉴赏邀请函x3；浑浊之气x5；1.5倍经验药水</li>
+					<li>60级 12格包袱；高级骑术（30天体验版）；时装鉴赏邀请函x6； 金券宝箱；小宠物爱心项圈；1.5倍经验药水；浑浊之气x10</li>
+					
+					
+				</ul>
+			
+			</div>
+		
+		</div>
+
+
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+
+</body>
+</html>

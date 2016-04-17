@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>请拿走你的序列号</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css"/>
+		<script language="javascript">
+			function copyText(){
+				var clipBoardContent="";
+				clipBoardContent+=document.getElementById("cdk").innerHTML;
+				clipBoardContent+="";
+				window.clipboardData.setData("Text",clipBoardContent);
+				alert("复制成功");
+			}
+			//copyToClipBoard();
+			
+		</script>
+	</head>
+<body>
+	<div class="allP">
+		<include file="./Application/Home/View/Public/header.html" />
+
+		<div class="content">
+			<div class="prompt"><span>温馨提示：</span>你已成功领取到号码，请及时激活使用</div>
+
+			<div class="seqcode">请拿走你的序列号：
+			
+				<span id="cdk">{$accode}</span>
+				<!--	
+				<input value="复 制" style="line-height:24px;font-size:14px" onclick="copyText('cdk')" type="button" id="copycode">
+				-->
+			</div>
+			
+			<div class="intro">
+				<h1>使用说明</h1>
+
+				<h4>序列号激活条件:</h4>
+				<ul class="intro_condi">
+					<li>（1）曾在《新大话西游2》中产生过消费</li>
+					<li>（2）30天以内未登陆《新大话西游2》，例如您发展的玩家在5月1日激活了您的老朋友序列号，他从4月1日起至5月1日未登陆游戏，即是符合该条件；</li>
+					<li>（3）激活序列号的游戏ID等级不低于未转生的70级；</li>
+					<li>（4）180天内未曾激活任意一种新大话2序列号；</li>
+				</ul>
+				<h4>激活步骤:</h4>
+				<ul class="intro_condi">
+					<li>（1）在长安（455,109)或东海渔村（122,55）找NPC与御武盟盟主，选择“我想激活老朋友序列号”。</li>
+					<li><img src="__PUBLIC__/images/xdh2jdxlp1.jpg" alt="第一步" /></li>
+					<li>（2）根据提示输入所领取的老朋友序列号即可。</li>
+					<li><img src="__PUBLIC__/images/xdh2jdxlp2.jpg" alt="第二步" /></li>
+					<li>（3）在长安（442,117）处找到NPC张老友领取奖励。</li>
+					<li><img src="__PUBLIC__/images/xdh2jdxlp3.jpg" alt="第二步" /></li>
+				</ul>
+			
+			</div>
+		
+		</div>
+
+
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>请拿走你的序列号</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css"/>
+		<script language="javascript">
+			function copyText(){
+				var clipBoardContent="";
+				clipBoardContent+=document.getElementById("cdk").innerHTML;
+				clipBoardContent+="";
+				window.clipboardData.setData("Text",clipBoardContent);
+				alert("复制成功");
+			}
+			//copyToClipBoard();
+			
+		</script>
+	</head>
+<body>
+	<div class="allP">
+		<include file="./Application/Home/View/Public/header.html" />
+
+		<div class="content">
+			<div class="prompt"><span>温馨提示：</span>你已成功领取到号码，请及时激活使用</div>
+
+			<div class="seqcode">请拿走你的序列号：
+			
+				<span id="cdk">{$accode}</span>
+				<!--	
+				<input value="复 制" style="line-height:24px;font-size:14px" onclick="copyText('cdk')" type="button" id="copycode">
+				-->
+			</div>
+			
+			<div class="intro">
+				<h1>使用说明</h1>
+
+				<h4>序列号激活条件:</h4>
+				<ul class="intro_condi">
+					<li>A、该网易账号在90天前登录过《大唐无双》，且在近90天内未激活过任何其他推广序列号；</li>
+					<li>B、该网易账号下至少有一个等级大于或等于60级的角色；</li>
+					<li>C、该网易账号近30天登陆《大唐无双》的总时间少于10个小时；</li>
+				</ul>
+				<h4>激活步骤:</h4>
+				<ul class="intro_condi">
+					<li>进入游戏后，点击“奖励中心”按钮（屏幕右上角地图左侧的礼品图形按钮），打开奖励中心界面，选择兑换礼品功能选项，输入序列号即可。</li>
+					
+				</ul>
+			
+			</div>
+		
+		</div>
+
+
+		<include file="./Application/Home/View/Public/footer.html" />
+	</div>
+
+</body>
+</html>
