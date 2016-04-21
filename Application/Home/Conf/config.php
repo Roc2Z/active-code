@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'SHOW_PAGE_TRACE' =>true,
+	//'SHOW_PAGE_TRACE' =>true,
 	'DB_TYPE'   => 'mysql', // 数据库类型
 	'DB_HOST'   => 'localhost', // 服务器地址
 	'DB_NAME'   => 'active_code', // 数据库名

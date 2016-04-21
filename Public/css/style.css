@@ -149,6 +149,10 @@ h1{
 	color:gray;
 
 }
+.comp span a{
+	text-decoration:none;
+
+}
 .about li a:hover{
 	text-decoration:underline;
 

@@ -14,7 +14,7 @@ class IndexController extends Controller {
 		$type = $_GET['type'];
 		$code = $_POST['verify'];
 		if($this->check_verify($code,$id = '')){
-			$this->success("验证成功",U('Seq/seqlist'.$type),0);
+			$this->success("验证成功",U('Seq/seqlist'.$type.'?type='.$type),0);
 		}else{
 			$this->error("验证失败",'javascript:history.back(-1)',0);
 		}	
@@ -30,5 +30,13 @@ class IndexController extends Controller {
 	function check_verify($code, $id = ''){
 		$verify = new \Think\Verify();
 		return $verify->check($code, $id);
+	}
+	public function giftgot(){
+	
+		$this->display();
+	}
+	public function aboutus(){
+	
+		$this->display();
 	}
 }

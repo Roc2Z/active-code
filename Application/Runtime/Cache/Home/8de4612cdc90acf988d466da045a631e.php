@@ -6,7 +6,7 @@
 		<meta name="Author" content="">
 		<meta name="Keywords" content="">
 		<meta name="Description" content="">
-		<title>请拿走你的序列号</title>
+		<title>序列号还剩下<?php echo ($account); ?>条</title>
 		<link rel="stylesheet" type="text/css" href="/active-code/Public/css/style.css"/>
 		<script language="javascript">
 			function copyText(){
@@ -37,7 +37,7 @@
 			<li><a href="">大话1</a></li>
 			<li><a href="">大话2</a></li>
 			-->
-			<span class="nav_text">★☆★最新序列号免费领取，100%可用，无限领，要多少有多少！★☆★</span>
+			<span class="nav_text"></span>
 		</ul>
 		<div class="announcement">
 			<img class="ancmt_img" src="/active-code/Public/images/iconk.gif" alt="图片" />
@@ -67,9 +67,9 @@
 	</script>
 
 		<div class="content">
-			<div class="prompt"><span>温馨提示：</span>你已成功领取到号码，请及时激活使用</div>
+			<div class="prompt"><span>温馨提示：</span>你已成功领取到号码，请及时激活使用,</div>
 
-			<div class="seqcode">请拿走你的序列号：
+			<div class="seqcode">序列号还剩下<?php echo ($account); ?>条：
 			
 				<span id="cdk"><?php echo ($accode); ?></span>
 				<!--	

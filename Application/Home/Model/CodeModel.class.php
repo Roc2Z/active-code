@@ -16,4 +16,9 @@ class CodeModel extends Model {
 			return "序列号被抢光了，等下一批吧^_^";
 		}
 	}
+	public function countnum($actype){
+		$arr = $this->where('acuse=0 and actype='.$actype)->select();
+		$count = count($arr);
+		return $count;
+	}
 }

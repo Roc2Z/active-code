@@ -37,7 +37,7 @@
 			<li><a href="">大话1</a></li>
 			<li><a href="">大话2</a></li>
 			-->
-			<span class="nav_text">★☆★最新序列号免费领取，100%可用，无限领，要多少有多少！★☆★</span>
+			<span class="nav_text"></span>
 		</ul>
 		<div class="announcement">
 			<img class="ancmt_img" src="/active-code/Public/images/iconk.gif" alt="图片" />
